@@ -50,6 +50,15 @@ public class SignUpPage {
         return driver.findElement(signUpModalLabel).isDisplayed();
     }
 
+    public boolean isSignUpModalClosed() {
+        try {
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("signInModal")));
+            return !driver.findElement(By.id("signInModal")).isDisplayed();
+        } catch (NoSuchElementException e) {
+            return true;
+        }
+    }
+
 
     public void clearFields() {
         driver.findElement(usernameField).clear();

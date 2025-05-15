@@ -14,7 +14,6 @@ public class ContactPage {
 
     private By CompnayName = By.id("nava");
     private By Fluid_Image = By.xpath("//*[@id=\"carouselExampleIndicators\"]/div/div[1]/img");
-    // Navigation Bar
     private By HomeButton = By.xpath("//*[@id=\"navbarExample\"]/ul/li[1]/a");
     private By ContactButton = By.xpath("//*[@id=\"navbarExample\"]/ul/li[2]/a");
     private By Close_ContactButton = By.xpath("//*[@id=\"exampleModal\"]/div/div/div[1]/button/span");

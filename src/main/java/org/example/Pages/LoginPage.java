@@ -66,7 +66,7 @@ public class LoginPage {
 
     public boolean isLoginModalClosed() {
         try {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("logInModal")));
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("logInModal")));
             return !driver.findElement(By.id("logInModal")).isDisplayed();
         } catch (NoSuchElementException e) {
             return true;

@@ -21,7 +21,7 @@ public class LogInTests extends OpenDriver {
         HomePage home = new HomePage(driver);
         home.openLoginForm();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.enterUsername("f8egfgewfgwagqugyftdr9trgwuh66767ylesflg7o8");
+        loginPage.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk61");
         loginPage.enterPassword("Password123!");
         loginPage.clickLoginButton();
         loginPage.logoutIfVisible();
@@ -55,7 +55,7 @@ public class LogInTests extends OpenDriver {
         HomePage home = new HomePage(driver);
         home.openLoginForm();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.enterUsername("f8egfgewfgwagqugyftdr9trgwuh66767ylesflg7o8");
+        loginPage.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk61");
         loginPage.enterPassword("");
         loginPage.clickLoginButton();
         String alertText = loginPage.getAlertTextAndAccept();
@@ -67,7 +67,7 @@ public class LogInTests extends OpenDriver {
         HomePage home = new HomePage(driver);
         home.openLoginForm();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.enterUsername("f8egfgewfgwagqugyftdr9trgwuh66767ylesflg7o867564534");
+        loginPage.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk6hvjhbuibi1");
         loginPage.enterPassword("Password123!");
         loginPage.clickLoginButton();
         String alertText = loginPage.getAlertTextAndAccept();
@@ -79,7 +79,7 @@ public class LogInTests extends OpenDriver {
         HomePage home = new HomePage(driver);
         home.openLoginForm();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.enterUsername("f8egfgewfgwagqugyftdr9trgwuh66767ylesflg7o8");
+        loginPage.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk61");
         loginPage.enterPassword("zzz");
         loginPage.clickLoginButton();
         String alertText = loginPage.getAlertTextAndAccept();
@@ -91,7 +91,7 @@ public class LogInTests extends OpenDriver {
         HomePage home = new HomePage(driver);
         home.openLoginForm();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.enterUsername("f8egfgewfgwagqugyftdr9trgwuh66767ylesflg7o8867545323gffh");
+        loginPage.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk6dytf1");
         loginPage.enterPassword("zzz");
         loginPage.clickLoginButton();
         String alertText = loginPage.getAlertTextAndAccept();

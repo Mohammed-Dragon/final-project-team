@@ -21,7 +21,7 @@ public class SignUpTests extends OpenDriver {
         HomePage home = new HomePage(driver);
         home.openSignUpForm();
         SignUpPage signUp = new SignUpPage(driver);
-        signUp.enterUsername("f8egfgewfgwagqugyftdr9trgwuh66767ylesflg7o8");
+        signUp.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk61");
         signUp.enterPassword("Password123!");
         signUp.clickSignUp();
         String alertText = signUp.getAlertText();
@@ -44,7 +44,7 @@ public class SignUpTests extends OpenDriver {
         HomePage home = new HomePage(driver);
         home.openSignUpForm();
         SignUpPage signUp = new SignUpPage(driver);
-        signUp.enterUsername("f8egfgewfgwagqugyftdr9trgwuh66767ylesflg7o8");
+        signUp.enterUsername("buvufg5ddr4e87t75ybjhvjfxrgstr3wtu0kygk61");
         signUp.enterPassword("1");
         signUp.clickSignUp();
         String alertText = signUp.getAlertText();
@@ -56,7 +56,7 @@ public class SignUpTests extends OpenDriver {
         HomePage home = new HomePage(driver);
         home.openSignUpForm();
         SignUpPage signUp = new SignUpPage(driver);
-        signUp.enterUsername("f8egfgewfgwagqugyftdr9trgwuh66767ylesflg7o8");
+        signUp.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk61");
         signUp.enterPassword("Password123!");
         signUp.clickSignUp();
         String alertText = signUp.getAlertText();
@@ -97,7 +97,7 @@ public class SignUpTests extends OpenDriver {
         signUp.clickSignUp();
         signUp.getAlertText();
         Assert.assertEquals(signUp.getUsernameFieldValue(), "existinguser");
-    }/////////////////////////
+    }
 
     @Test(priority = 10)
     public void TC10_SignupFormClosesProperly() throws InterruptedException {
@@ -105,7 +105,7 @@ public class SignUpTests extends OpenDriver {
         home.openSignUpForm();
         SignUpPage signUp = new SignUpPage(driver);
         signUp.closeSignUpForm();
-        Assert.assertFalse(signUp.isFormVisible(), "Sign-up form did not close properly.");
+        Assert.assertTrue(signUp.isSignUpModalClosed(), "Sign-up form did not close properly.");
     }
 
     @Test(priority = 11)
