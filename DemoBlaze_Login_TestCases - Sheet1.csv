@@ -1,0 +1,10 @@
+Test Case ID,Test Scenario,Preconditions,Steps to Execute,Expected Result,Actual Result,Priority
+TC01,Verify that the Login form opens,User is on the loginpage,Click on the 'Log in' button in the navigation bar,The Login form should appear,pass,High
+TC02,Login with valid credentials,User is on the homepage,"Enter a valid username and password, then click 'Log in'",User should be logged in and redirected,pass,High
+TC03,Attempt to login without filling any fields,User is on the homepage,"Leave all fields empty, then click 'Log in'",The system should prevent submission and show an alert,pass,High
+TC06,Login with invalid username,User is on the homepage,"Enter an invalid username and valid password, then click 'Log in'",The system should prevent login and show an error message,pass,Medium
+TC07,Login with invalid password,User is on the homepage,"Enter a valid username and invalid password, then click 'Log in'",The system should prevent login and show an error message,pass,Medium
+TC08,Login with both username and password invalid,User is on the homepage,"Enter invalid username and password, then click 'Log in'",The system should prevent login and show an error message,pass,Medium
+TC04,Login without username,User is on the homepage,"Leave the username field empty, enter a password, then click 'Log in'",The system should prevent submission and show an alert,pass,High
+TC5,Login without password,User is on the homepage,"Enter a username, leave the password field empty, then click 'Log in'",The system should prevent submission and show an alert,pass,High
+TC09,Verify that the Login form closes properly,User is on the homepage,Click the close button (X),The Login form should close,pass,Low
