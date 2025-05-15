@@ -21,7 +21,7 @@ public class LogInTests extends OpenDriver {
         HomePage home = new HomePage(driver);
         home.openLoginForm();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk61");
+        loginPage.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk61234");
         loginPage.enterPassword("Password123!");
         loginPage.clickLoginButton();
         loginPage.logoutIfVisible();
@@ -55,7 +55,7 @@ public class LogInTests extends OpenDriver {
         HomePage home = new HomePage(driver);
         home.openLoginForm();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk61");
+        loginPage.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk61234");
         loginPage.enterPassword("");
         loginPage.clickLoginButton();
         String alertText = loginPage.getAlertTextAndAccept();
@@ -79,7 +79,7 @@ public class LogInTests extends OpenDriver {
         HomePage home = new HomePage(driver);
         home.openLoginForm();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk61");
+        loginPage.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk61234");
         loginPage.enterPassword("zzz");
         loginPage.clickLoginButton();
         String alertText = loginPage.getAlertTextAndAccept();
@@ -91,7 +91,7 @@ public class LogInTests extends OpenDriver {
         HomePage home = new HomePage(driver);
         home.openLoginForm();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk6dytf1");
+        loginPage.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk6dytf12");
         loginPage.enterPassword("zzz");
         loginPage.clickLoginButton();
         String alertText = loginPage.getAlertTextAndAccept();
@@ -99,7 +99,7 @@ public class LogInTests extends OpenDriver {
     }
 
     @Test(priority = 9)
-    public void TC9_CloseLoginForm() throws InterruptedException {
+    public void TC9_CloseLoginForm() {
         HomePage home = new HomePage(driver);
         home.openLoginForm();
         LoginPage loginPage = new LoginPage(driver);

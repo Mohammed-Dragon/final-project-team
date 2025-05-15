@@ -21,7 +21,7 @@ public class SignUpTests extends OpenDriver {
         HomePage home = new HomePage(driver);
         home.openSignUpForm();
         SignUpPage signUp = new SignUpPage(driver);
-        signUp.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk61");
+        signUp.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk61234");
         signUp.enterPassword("Password123!");
         signUp.clickSignUp();
         String alertText = signUp.getAlertText();
@@ -44,7 +44,7 @@ public class SignUpTests extends OpenDriver {
         HomePage home = new HomePage(driver);
         home.openSignUpForm();
         SignUpPage signUp = new SignUpPage(driver);
-        signUp.enterUsername("buvufg5ddr4e87t75ybjhvjfxrgstr3wtu0kygk61");
+        signUp.enterUsername("buvufg5ddr4e87t75ybjhvjfxrgstr3wtu0kygk61234");
         signUp.enterPassword("1");
         signUp.clickSignUp();
         String alertText = signUp.getAlertText();
@@ -56,7 +56,7 @@ public class SignUpTests extends OpenDriver {
         HomePage home = new HomePage(driver);
         home.openSignUpForm();
         SignUpPage signUp = new SignUpPage(driver);
-        signUp.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk61");
+        signUp.enterUsername("buvufg5r4e87t75ybjhvjfxrgstr3wtu0kygk61234");
         signUp.enterPassword("Password123!");
         signUp.clickSignUp();
         String alertText = signUp.getAlertText();
@@ -116,3 +116,4 @@ public class SignUpTests extends OpenDriver {
         Assert.assertEquals(signUp.getPasswordFieldType(), "password", "Password is not masked");
     }
 }
+
